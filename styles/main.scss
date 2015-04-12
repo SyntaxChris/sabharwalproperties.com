@@ -51,6 +51,7 @@ body{
 			width: 100%;
 			padding-bottom: 70%;
 			margin: 0 auto;
+			display: none;
 			&.home{
 				img{
 					position: absolute;
@@ -59,13 +60,17 @@ body{
 				}
 			}
 			&.about{
+				// display: none
 				img{
 					position: absolute;
 					width: 100%;
+					top: 0;
+					left: 0;
 					opacity: 0.6;
 				}
 			}
 			&.portfolio{
+				// display: none;
                 img{
 					position: absolute;
 					width: 100%;
@@ -75,16 +80,17 @@ body{
 			&.contact{
 				overflow-x: hidden;
 				overflow-y: hidden;
+				// display: none;
                 img{
 					position: absolute;
 					width: 105%;
 					opacity: 0.8;
 				}
 			}
-			&.slide{
-				-webkit-animation: splash-fade 0.7s;
-                -moz-animation: splash-fade 0.7s;
-                animation: splash-fade 0.7s;
+			&.fade-in {
+				-webkit-animation: fade-in 0.7s;
+                -moz-animation: fade-in 0.7s;
+                animation: fade-in 0.7s;
 
                 -webkit-animation-iteration-count: 1;
                 -moz-animation-iteration-count: 1;
@@ -93,6 +99,25 @@ body{
                 -webkit-animation-timing-function: linear;
                 -moz-animation-timing-function: linear;
                 animation-timing-function: linear;
+
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+			}
+			&.fade-out{
+				-webkit-animation: fade-out 0.7s;
+                -moz-animation: fade-out 0.7s;
+                animation: fade-out 0.7s;
+
+                -webkit-animation-iteration-count: 1;
+                -moz-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                animation-timing-function: linear;
+
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
 			}
 		}
 
@@ -110,7 +135,14 @@ body{
 }
 
 
-@-webkit-keyframes splash-fade{
+@-webkit-keyframes fade-out{
    0% { opacity: 1;}
-   100% {opacity: 0;}
+   100% {opacity: 0;
+   		display: none;}
+}
+
+@-webkit-keyframes fade-in{
+   0% { opacity: 0;
+   		display: block;}
+   100% {opacity: 1;}
 }
