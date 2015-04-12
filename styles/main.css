@@ -46,7 +46,8 @@ body {
       position: relative;
       width: 100%;
       padding-bottom: 70%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      display: none; }
       body .content-cntnr .splash.home img {
         position: absolute;
         width: 100%;
@@ -54,6 +55,8 @@ body {
       body .content-cntnr .splash.about img {
         position: absolute;
         width: 100%;
+        top: 0;
+        left: 0;
         opacity: 0.6; }
       body .content-cntnr .splash.portfolio img {
         position: absolute;
@@ -66,16 +69,30 @@ body {
           position: absolute;
           width: 105%;
           opacity: 0.8; }
-      body .content-cntnr .splash.slide {
-        -webkit-animation: splash-fade 0.7s;
-        -moz-animation: splash-fade 0.7s;
-        animation: splash-fade 0.7s;
+      body .content-cntnr .splash.fade-in {
+        -webkit-animation: fade-in 0.7s;
+        -moz-animation: fade-in 0.7s;
+        animation: fade-in 0.7s;
         -webkit-animation-iteration-count: 1;
         -moz-animation-iteration-count: 1;
         animation-iteration-count: 1;
         -webkit-animation-timing-function: linear;
         -moz-animation-timing-function: linear;
-        animation-timing-function: linear; }
+        animation-timing-function: linear;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; }
+      body .content-cntnr .splash.fade-out {
+        -webkit-animation: fade-out 0.7s;
+        -moz-animation: fade-out 0.7s;
+        animation: fade-out 0.7s;
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; }
   body .footer-cntnr {
     position: absolute;
     z-index: 1;
@@ -86,11 +103,18 @@ body {
     background-color: #000;
     opacity: 0.7; }
 
-@-webkit-keyframes splash-fade {
+@-webkit-keyframes fade-out {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+    display: none; } }
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
 
