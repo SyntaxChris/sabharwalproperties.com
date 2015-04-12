@@ -1,5 +1,7 @@
 body {
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  color: white; }
   body .nav-cntnr {
     position: absolute;
     z-index: 1;
@@ -15,16 +17,16 @@ body {
       margin: 0 auto;
       padding: 0;
       margin: 0;
-      padding-left: 12%; }
+      padding-left: 20%; }
       body .nav-cntnr .btn-cntnr .nav-btn {
         position: relative;
         display: inline-block;
-        width: 20%;
+        text-align: center;
+        font-size: 2vw;
+        width: 15%;
         padding: 0;
         margin: 0;
-        padding-bottom: 2%;
-        cursor: pointer;
-        border: 1px solid rgba(255, 255, 255, 0.5); }
+        cursor: pointer; }
   body .content-cntnr {
     position: absolute;
     z-index: 0;
