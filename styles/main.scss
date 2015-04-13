@@ -67,7 +67,7 @@ body{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		overflow-y: hidden;
+		overflow: hidden;
 		background-color: white;
 		.splash{
 			position: relative;
@@ -80,7 +80,7 @@ body{
 				img{
 					position: absolute;
 					width: 100%;
-					opacity: 0.8;
+					opacity: 1;
 				}
 			}
 			&.about{				
@@ -157,7 +157,7 @@ body{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		overflow-y: scroll;
+		overflow: auto;
 		.cntnr{
 			color: #000;
 			background-color: white;

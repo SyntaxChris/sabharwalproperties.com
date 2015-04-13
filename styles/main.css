@@ -58,7 +58,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: white; }
     body .splash-cntnr .splash {
       position: relative;
@@ -70,7 +70,7 @@ body {
       body .splash-cntnr .splash.home img {
         position: absolute;
         width: 100%;
-        opacity: 0.8; }
+        opacity: 1; }
       body .splash-cntnr .splash.about img {
         position: absolute;
         width: 100%;
@@ -125,7 +125,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow-y: scroll; }
+    overflow: auto; }
     body .content-cntnr .cntnr {
       color: #000;
       background-color: white;
