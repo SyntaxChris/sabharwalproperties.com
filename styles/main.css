@@ -70,7 +70,7 @@ body {
       body .splash-cntnr .splash.home img {
         position: absolute;
         width: 100%;
-        opacity: 1; }
+        opacity: 0.8; }
       body .splash-cntnr .splash.about img {
         position: absolute;
         width: 100%;
