@@ -1,6 +1,5 @@
 body{
 	overflow: hidden;
-	// font-family: 'Open Sans', sans-serif;
 	font-family: 'Poiret One', cursive;
 	color: white;
 	.nav-cntnr{
@@ -41,11 +40,11 @@ body{
 					width: 35%;
 				}
 				&#about{
-					left: 60%;
+					left: 61%;
 					margin-top: 2.5%;
 				}
 				&#portfolio{
-					left: 71%;
+					left: 72%;
 					margin-top: 2.5%;
 				}
 				&#contact{
@@ -70,7 +69,8 @@ body{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		overflow-y: scroll;
+		overflow-y: hidden;
+		background-color: white;
 		.cntnt-bbl{
 			position: absolute;
 			margin-top: 10%;
@@ -87,6 +87,7 @@ body{
 			padding-bottom: 70%;
 			margin: 0 auto;
 			display: none;
+			overflow: hidden;
 			&.home{
 				img{
 					position: absolute;
@@ -94,8 +95,7 @@ body{
 					opacity: 0.8;
 				}
 			}
-			&.about{
-				// display: none
+			&.about{				
 				img{
 					position: absolute;
 					width: 100%;
@@ -105,7 +105,6 @@ body{
 				}
 			}
 			&.portfolio{
-				// display: none;
                 img{
 					position: absolute;
 					width: 100%;
@@ -113,9 +112,6 @@ body{
 				}
 			}
 			&.contact{
-				overflow-x: hidden;
-				overflow-y: hidden;
-				// display: none;
                 img{
 					position: absolute;
 					width: 105%;
