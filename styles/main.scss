@@ -183,6 +183,13 @@ body{
 				}
 			}
 		}
+	}
+	.content-cntnr::-webkit-scrollbar { 
+		width: 0 !important;
+		display: none;
+	}
+	.content-cntnr { 
+		-ms-overflow-style: none; 
 	}	
 	// .footer-cntnr{
 	// 	position: absolute;
