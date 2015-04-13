@@ -1,59 +1,58 @@
 body {
   overflow: hidden;
   font-family: 'Poiret One', cursive;
-  color: white; }
+  color: white;
+  padding: 0; }
   body .nav-cntnr {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
+    padding: 0;
+    margin: 0;
     width: 100%;
     padding-bottom: 5%;
     background-color: #000;
     opacity: 0.5; }
+    body .nav-cntnr svg {
+      position: absolute;
+      top: -20%;
+      width: 10%;
+      height: 160%; }
     body .nav-cntnr .btn-cntnr {
       position: relative;
       width: 70%;
       height: 55%;
       left: 5%;
       top: 22%;
-      padding: 0;
-      padding-left: 20%; }
-      body .nav-cntnr .btn-cntnr .logo {
-        position: absolute;
-        top: 0;
-        left: -5%;
-        width: 12%; }
-        body .nav-cntnr .btn-cntnr .logo svg {
-          width: 100%;
-          height: 10%; }
+      padding: 0; }
       body .nav-cntnr .btn-cntnr .nav-btn {
         position: absolute;
         top: 0;
         text-align: center;
         width: 25%;
         height: 100%;
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         cursor: pointer; }
         body .nav-cntnr .btn-cntnr .nav-btn#home {
-          font-size: 3.5vw;
-          left: 5%;
+          font-size: 2.8vw;
+          left: 3%;
           padding: 0;
           margin: 0;
-          margin-top: 0.4%;
-          width: 35%; }
+          margin-top: 1.3%;
+          width: 40%; }
         body .nav-cntnr .btn-cntnr .nav-btn#about {
-          left: 61%;
-          margin-top: 2.5%; }
+          left: 90%;
+          margin-top: 3.2%; }
         body .nav-cntnr .btn-cntnr .nav-btn#portfolio {
-          left: 72%;
-          margin-top: 2.5%; }
+          left: 102%;
+          margin-top: 3.2%; }
         body .nav-cntnr .btn-cntnr .nav-btn#contact {
-          left: 83%;
-          margin-top: 2.5%; }
+          left: 114%;
+          margin-top: 3.2%; }
   body .splash-cntnr {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
@@ -76,7 +75,7 @@ body {
         width: 100%;
         top: 0;
         left: 0;
-        opacity: 0.6; }
+        opacity: 0.8; }
       body .splash-cntnr .splash.portfolio img {
         position: absolute;
         width: 100%;
@@ -118,15 +117,35 @@ body {
         animation-timing-function: linear;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
-  body .footer-cntnr {
+  body .content-cntnr {
     position: absolute;
     z-index: 1;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    padding-bottom: 2%;
-    background-color: #000;
-    opacity: 0.7; }
+    height: 100%;
+    overflow-y: scroll; }
+    body .content-cntnr .cntnr {
+      color: #000;
+      background-color: white;
+      border: 1px solid #D8D8D8;
+      opacity: 0.9;
+      position: relative;
+      width: 40%;
+      margin: 0 auto;
+      margin-top: 8%;
+      padding: 2%;
+      padding-bottom: 0; }
+      body .content-cntnr .cntnr .header {
+        text-align: center;
+        font-size: 4vw;
+        width: 100%; }
+      body .content-cntnr .cntnr .body {
+        width: 100%;
+        font-size: 2vw; }
+        body .content-cntnr .cntnr .body div {
+          margin-top: 5%;
+          margin-bottom: 5%; }
 
 @-webkit-keyframes fade-out {
   0% {
