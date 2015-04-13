@@ -1,38 +1,68 @@
 body{
 	overflow: hidden;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poiret One', cursive;
 	color: white;
 	.nav-cntnr{
 		position: absolute;
 		z-index: 1;
 		top: 0;
 		left: 0;	
-		padding: 1%;
+		// padding: 1%;
 		width: 100%;
+		padding-bottom: 5%;
 		background-color: #000;
 		opacity: 0.5;
+		// border: 1px solid red;
 		.btn-cntnr{
 			position: relative;
-			width: 90%;
-			margin: 0 auto;
+			width: 70%;
+			height: 55%;
+			left: 5%;
+			top: 22%;
 			padding: 0;
-			margin: 0;
 			padding-left: 20%;
+			// border: 1px solid green;
 			.nav-btn{
-				position: relative;
-				display: inline-block;
+				position: absolute;
+				top: 0;
 				text-align: center;
-				font-size: 2vw;
-				width: 15%;
-				padding: 0;
-				margin: 0;
-				// padding-bottom: 2%;
+				width: 25%;
+				height: 100%;
+				font-size: 1.5vw;
 				cursor: pointer;
 				// border: 1px solid rgba(255,255,255, 0.5);
+				&#home{
+					font-size: 3.5vw;
+					left: 0;
+					padding: 0;
+					margin: 0;
+					margin-top: 0.4%;
+					width: 35%;
+				}
+				&#about{
+					left: 61%;
+					margin-top: 2.5%;
+				}
+				&#portfolio{
+					left: 72%;
+					margin-top: 2.5%;
+				}
+				&#contact{
+					left: 83%;
+					margin-top: 2.5%;
+				}
 			}
 		}
+		// .border{
+		// 	position: relative;
+		// 	height: 2%;
+		// 	width: 95%;
+		// 	top: 55%;
+		// 	border: 1px solid blue;
+		// 	margin: 0 auto;
+		// }
 	}
-	.content-cntnr{
+	.splash-cntnr{
 		position: absolute;
 		z-index: 0;
 		top: 0;
@@ -40,22 +70,14 @@ body{
 		width: 100%;
 		height: 100%;
 		overflow-y: hidden;
-		.cntnt-bbl{
-			position: absolute;
-			margin-top: 10%;
-			margin-left: 10%;
-			top: 0;
-			left: 0;
-			width: 40%;
-			height: 40%;
-			background-color: white;
-		}
+		background-color: white;
 		.splash{
 			position: relative;
 			width: 100%;
 			padding-bottom: 70%;
 			margin: 0 auto;
 			display: none;
+			overflow: hidden;
 			&.home{
 				img{
 					position: absolute;
@@ -63,8 +85,7 @@ body{
 					opacity: 0.8;
 				}
 			}
-			&.about{
-				// display: none
+			&.about{				
 				img{
 					position: absolute;
 					width: 100%;
@@ -74,7 +95,6 @@ body{
 				}
 			}
 			&.portfolio{
-				// display: none;
                 img{
 					position: absolute;
 					width: 100%;
@@ -82,9 +102,6 @@ body{
 				}
 			}
 			&.contact{
-				overflow-x: hidden;
-				overflow-y: hidden;
-				// display: none;
                 img{
 					position: absolute;
 					width: 105%;

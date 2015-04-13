@@ -1,77 +1,83 @@
 body {
   overflow: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
   color: white; }
   body .nav-cntnr {
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
-    padding: 1%;
     width: 100%;
+    padding-bottom: 5%;
     background-color: #000;
     opacity: 0.5; }
     body .nav-cntnr .btn-cntnr {
       position: relative;
-      width: 90%;
-      margin: 0 auto;
+      width: 70%;
+      height: 55%;
+      left: 5%;
+      top: 22%;
       padding: 0;
-      margin: 0;
       padding-left: 20%; }
       body .nav-cntnr .btn-cntnr .nav-btn {
-        position: relative;
-        display: inline-block;
+        position: absolute;
+        top: 0;
         text-align: center;
-        font-size: 2vw;
-        width: 15%;
-        padding: 0;
-        margin: 0;
+        width: 25%;
+        height: 100%;
+        font-size: 1.5vw;
         cursor: pointer; }
-  body .content-cntnr {
+        body .nav-cntnr .btn-cntnr .nav-btn#home {
+          font-size: 3.5vw;
+          left: 0;
+          padding: 0;
+          margin: 0;
+          margin-top: 0.4%;
+          width: 35%; }
+        body .nav-cntnr .btn-cntnr .nav-btn#about {
+          left: 61%;
+          margin-top: 2.5%; }
+        body .nav-cntnr .btn-cntnr .nav-btn#portfolio {
+          left: 72%;
+          margin-top: 2.5%; }
+        body .nav-cntnr .btn-cntnr .nav-btn#contact {
+          left: 83%;
+          margin-top: 2.5%; }
+  body .splash-cntnr {
     position: absolute;
     z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow-y: hidden; }
-    body .content-cntnr .cntnt-bbl {
-      position: absolute;
-      margin-top: 10%;
-      margin-left: 10%;
-      top: 0;
-      left: 0;
-      width: 40%;
-      height: 40%;
-      background-color: white; }
-    body .content-cntnr .splash {
+    overflow-y: hidden;
+    background-color: white; }
+    body .splash-cntnr .splash {
       position: relative;
       width: 100%;
       padding-bottom: 70%;
       margin: 0 auto;
-      display: none; }
-      body .content-cntnr .splash.home img {
+      display: none;
+      overflow: hidden; }
+      body .splash-cntnr .splash.home img {
         position: absolute;
         width: 100%;
         opacity: 0.8; }
-      body .content-cntnr .splash.about img {
+      body .splash-cntnr .splash.about img {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
         opacity: 0.6; }
-      body .content-cntnr .splash.portfolio img {
+      body .splash-cntnr .splash.portfolio img {
         position: absolute;
         width: 100%;
         opacity: 0.8; }
-      body .content-cntnr .splash.contact {
-        overflow-x: hidden;
-        overflow-y: hidden; }
-        body .content-cntnr .splash.contact img {
-          position: absolute;
-          width: 105%;
-          opacity: 0.8; }
-      body .content-cntnr .splash.fade-in {
+      body .splash-cntnr .splash.contact img {
+        position: absolute;
+        width: 105%;
+        opacity: 0.8; }
+      body .splash-cntnr .splash.fade-in {
         -webkit-animation: fade-in 0.7s;
         -moz-animation: fade-in 0.7s;
         -ms-animation: fade-in 0.7s;
@@ -92,7 +98,7 @@ body {
         -ms-animation-fill-mode: forwards;
         -o-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
-      body .content-cntnr .splash.fade-out {
+      body .splash-cntnr .splash.fade-out {
         -webkit-animation: fade-out 0.7s;
         -moz-animation: fade-out 0.7s;
         animation: fade-out 0.7s;
