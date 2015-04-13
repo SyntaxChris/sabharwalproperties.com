@@ -2,10 +2,10 @@ $( document ).ready(function() {
 	$('.splash.home').css('display', 'block');
 	$('.splash.home').addClass('fade-in');
 
-
     $('.nav-btn').on('click', function(){
     	var navBtn = $(this).attr('id');
     	$('.splash').addClass('fade-out');
+
 		switch(navBtn) {
 		    case 'home':
 		    	$('.splash').hide();

@@ -15,6 +15,7 @@ body {
     background-color: #000;
     opacity: 0.5; }
     body .nav-cntnr svg {
+      cursor: pointer;
       position: absolute;
       top: -20%;
       width: 10%;
