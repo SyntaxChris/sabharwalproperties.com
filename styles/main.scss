@@ -77,6 +77,7 @@ body{
 			margin: 0 auto;
 			display: none;
 			overflow: hidden;
+			opacity: 0;
 			&.home{
 				img{
 					position: absolute;
@@ -171,6 +172,61 @@ body{
 			margin-top: 8%;
 			padding: 2%;
 			padding-bottom: 0;
+			display: none;
+			opacity: 0;
+			&.fade-in {
+				-webkit-animation: fade-in 0.5s;
+                -moz-animation: fade-in 0.5s;
+                -ms-animation: fade-in 0.5s;
+                -o-animation: fade-in 0.5s;
+                animation: fade-in 0.5s;
+
+                -webkit-animation-delay: 0.3s;
+                -moz-animation-delay: 0.3s; 
+                -ms-animation-delay: 0.3s; 
+                -o-animation-delay: 0.3s;  
+    			animation-delay: 0.3s;
+
+                -webkit-animation-iteration-count: 1;
+                -moz-animation-iteration-count: 1;
+                -ms-animation-iteration-count: 1;
+                -o-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                -ms-animation-timing-function: linear;
+                -o-animation-timing-function: linear;
+                animation-timing-function: linear;
+
+                -webkit-animation-fill-mode: forwards;
+                -moz-animation-fill-mode: forwards;
+                -ms-animation-fill-mode: forwards;
+                -o-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+			}
+			&.fade-out{
+				-webkit-animation: fade-out 0.5s;
+                -moz-animation: fade-out 0.5s;
+                animation: fade-out 0.5s;
+
+                -webkit-animation-delay: 0.3s;
+                -moz-animation-delay: 0.3s; 
+                -ms-animation-delay: 0.3s; 
+                -o-animation-delay: 0.3s;  
+    			animation-delay: 0.3s;
+
+                -webkit-animation-iteration-count: 1;
+                -moz-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                animation-timing-function: linear;
+
+                -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+			}
 			.header{
 				text-align: center;
 				font-size: 4vw;
@@ -193,16 +249,6 @@ body{
 	.content-cntnr { 
 		-ms-overflow-style: none; 
 	}	
-	// .footer-cntnr{
-	// 	position: absolute;
-	// 	z-index: 1;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	padding-bottom: 2%;
-	// 	background-color: #000;
-	// 	opacity: 0.7;
-	// }
 }
 
 

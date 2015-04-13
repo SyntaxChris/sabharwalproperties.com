@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-	$('.splash.home').css('display', 'block');
-	$('.splash.home').addClass('fade-in');
+	$('.splash.home, .cntnr.home').css('display', 'block');
+	$('.splash.home, .cntnr.home').addClass('fade-in');
 
     $('.nav-btn').on('click', function(){
     	var navBtn = $(this).attr('id');
@@ -8,13 +8,13 @@ $( document ).ready(function() {
 
 		switch(navBtn) {
 		    case 'home':
-		    	$('.splash').hide();
-		    	$('.splash.home').removeClass('fade-out');
-		    	$('.splash.home').show();
-		        $('.splash.home').addClass('fade-in');
+		    	$('.splash, .cntnr').hide();
+		    	$('.splash.home, .cntnr.home').removeClass('fade-out');
+		    	$('.splash.home, .cntnr.home').show();
+		        $('.splash.home, .cntnr.home').addClass('fade-in');
 		        break;
 		    case 'about':
-		    	$('.splash').hide();
+		    	$('.splash, .cntnr').hide();
 		       	$('.splash.about').removeClass('fade-out');
 		       	$('.splash.about').show();
 		        $('.splash.about').addClass('fade-in');
