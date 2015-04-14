@@ -72,9 +72,10 @@ body {
       display: none;
       overflow: hidden;
       opacity: 0; }
-      body .splash-cntnr .splash.home {
-        background-image: url("../images/nyc_splash.jpg");
-        background-size: 100%, 100%; }
+      body .splash-cntnr .splash.home img {
+        position: absolute;
+        width: 100%;
+        opacity: 1; }
       body .splash-cntnr .splash.about img {
         position: absolute;
         width: 100%;

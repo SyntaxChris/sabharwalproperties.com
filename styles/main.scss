@@ -87,13 +87,11 @@ body{
 			overflow: hidden;
 			opacity: 0;
 			&.home{
-				background-image: url("../images/nyc_splash.jpg");
-				background-size: 100%, 100%;
-				// img{
-				// 	position: absolute;
-				// 	width: 100%;
-				// 	opacity: 1;
-				// }
+				img{
+					position: absolute;
+					width: 100%;
+					opacity: 1;
+				}
 			}
 			&.about{				
 				img{
