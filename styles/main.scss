@@ -1,7 +1,10 @@
 body{
 	overflow: hidden;
-	// font-family: 'Poiret One', cursive;
-	font-family: 'Cinzel', serif;
+	font-family: 'Poiret One', cursive;
+	// font-family: 'Cinzel', serif;
+	// font-family: 'Playfair Display', serif;
+	// font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 	color: white;
 	background-color: #E0F2F7;
 	padding: 0;
@@ -15,6 +18,7 @@ body{
 		width: 100%;
 		padding-bottom: 5%;
 		background-color: #000;
+		color: #FFFFFF;
 		opacity: 0.8;
 		svg{
 			cursor: pointer;
@@ -38,14 +42,20 @@ body{
 				height: 100%;
 				font-size: 1.3vw;
 				cursor: pointer;
+				font-family: 'Cinzel', serif;
+				font-weight: 400;
 				// border: 1px solid rgba(255,255,255, 0.5);
 				&#home{
-					font-size: 2.8vw;
-					left: 3%;
+					
+					// font-family: 'Cinzel Decorative', cursive;
+					
+					font-size: 3vw;
+					left: 0;
 					padding: 0;
 					margin: 0;
-					margin-top: 1.3%;
-					width: 50%;
+					margin-top: 1%;
+					width: 60%;
+
 				}
 				&#about{
 					left: 90%;
@@ -56,7 +66,7 @@ body{
 					margin-top: 3.2%;
 				}
 				&#contact{
-					left: 114%;
+					left: 115%;
 					margin-top: 3.2%;
 				}
 			}
@@ -162,21 +172,20 @@ body{
 		height: 100%;
 		overflow: auto;
 		overflow-x: hidden;
+        font-family: 'Raleway', sans-serif;
 		.cntnr{
-
 			color: #000;
-			// background-color: #FCFCF2;
-			background-color: white;
+			background-color: #FFFFFF;
+			// background-color: white;
 			// border: 1px solid #D8D8D8;
 			position: relative;
 			width: 30%;
 			margin: 0 auto;
-			margin-top: 8%;
+			margin-top: 10%;
 			padding: 2%;
 			padding-bottom: 0;
 			display: none;
 			opacity: 0;
-			// font-family: 'Playfair Display', serif;
 			&.fade-in {
 				-webkit-animation: fade-in 0.5s;
                 -moz-animation: fade-in 0.5s;
@@ -234,20 +243,22 @@ body{
 				text-align: center;
 				font-size: 3.5vw;
 				width: 100%;
-				// font-family: 'Raleway', sans-serif;
+				font-weight: 300;
+				font-family: 'Raleway', sans-serif;
 			}
 			.body{
 				position: relative;
 				margin: 0 auto;
 				width: 100%;
-				font-size: 1.7vw;
+				font-size: 1.5vw;
 				padding-bottom: 5%;
+				font-weight: 100;
 				// font-family: 'Playfair Display', serif;
 				// font-family: 'Poiret One', cursive;
 
 				// font-family: 'Raleway', sans-serif;
-				font-family: 'Didact Gothic', sans-serif;
-				font-weight: 300;
+				// font-family: 'Didact Gothic', sans-serif;
+				font-weight: 200;
 				div{
 					margin-top: 5%;
 					// margin-bottom: 5%;
