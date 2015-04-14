@@ -1,6 +1,6 @@
 body {
   overflow: hidden;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway', sans-serif;
   font-weight: 100;
   color: white;
   background-color: #E0F2F7;
@@ -192,7 +192,7 @@ body {
         font-size: 3.5vw;
         width: 100%;
         font-weight: 300;
-        font-family: 'Raleway', sans-serif; }
+        font-family: 'Cinzel', serif; }
       body .content-cntnr .cntnr .body {
         position: relative;
         margin: 0 auto;
