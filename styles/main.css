@@ -41,11 +41,11 @@ body {
         font-family: 'Cinzel', serif;
         font-weight: 400; }
         body .nav-cntnr .btn-cntnr .nav-btn#home {
-          font-size: 3vw;
-          left: 0;
+          font-size: 3.2vw;
+          left: 1%;
           padding: 0;
           margin: 0;
-          margin-top: 1%;
+          margin-top: 0.7%;
           width: 60%; }
         body .nav-cntnr .btn-cntnr .nav-btn#about {
           left: 90%;
