@@ -91,11 +91,13 @@ body{
 			overflow: hidden;
 			opacity: 0;
 			&.home{
-				img{
-					position: absolute;
-					width: 100%;
-					opacity: 1;
-				}
+				background-image: url("../images/nyc_splash.jpg");
+				background-size: 100%, 100%;
+				// img{
+				// 	position: absolute;
+				// 	width: 100%;
+				// 	opacity: 1;
+				// }
 			}
 			&.about{				
 				img{
@@ -175,10 +177,9 @@ body{
 		overflow-x: hidden;
         font-family: 'Raleway', sans-serif;
 		.cntnr{
+			display: none;
 			color: #000;
 			background-color: #FFFFFF;
-			// background-color: white;
-			// border: 1px solid #D8D8D8;
 			position: relative;
 			width: 30%;
 			margin: 0 auto;
@@ -187,6 +188,14 @@ body{
 			padding-bottom: 0;
 			display: none;
 			opacity: 0;
+			&.home{
+				width: 30%;
+			}
+			&.about{
+				.nav{
+
+				}
+			}
 			&.fade-in {
 				-webkit-animation: fade-in 0.5s;
                 -moz-animation: fade-in 0.5s;
@@ -252,7 +261,8 @@ body{
 				position: relative;
 				margin: 0 auto;
 				width: 100%;
-				font-size: 1.5vw;
+				font-size: 1.3vw;
+				line-height: 1.5;
 				padding-bottom: 5%;
 				font-weight: 100;
 				// font-family: 'Playfair Display', serif;

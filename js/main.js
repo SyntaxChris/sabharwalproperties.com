@@ -20,13 +20,13 @@ $( document ).ready(function() {
 		        $('.splash.about').addClass('fade-in');
 		        break;
 		    case 'portfolio':
-		    	$('.splash').hide();
+		    	$('.splash, .cntnr').hide();
 		    	$('.splash.portfolio').removeClass('fade-out');
 		    	$('.splash.portfolio').show();
 		        $('.splash.portfolio').addClass('fade-in');
 		        break;
 		    case 'contact':
-		    	$('.splash').hide();
+		    	$('.splash, .cntnr').hide();
 		    	$('.splash.contact').removeClass('fade-out');
 		    	$('.splash.contact').show();
 		        $('.splash.contact').addClass('fade-in');
