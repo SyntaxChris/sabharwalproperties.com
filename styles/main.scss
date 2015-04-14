@@ -164,7 +164,7 @@ body{
 		.cntnr{
 			color: #000;
 			background-color: white;
-			border: 1px solid #D8D8D8;
+			// border: 1px solid #D8D8D8;
 			opacity: 0.9;
 			position: relative;
 			width: 40%;
@@ -235,9 +235,10 @@ body{
 			.body{
 				width: 100%;
 				font-size: 2vw;
+				padding-bottom: 5%;
 				div{
 					margin-top: 5%;
-					margin-bottom: 5%;
+					// margin-bottom: 5%;
 				}
 			}
 		}

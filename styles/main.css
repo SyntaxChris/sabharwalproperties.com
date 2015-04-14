@@ -132,7 +132,6 @@ body {
     body .content-cntnr .cntnr {
       color: #000;
       background-color: white;
-      border: 1px solid #D8D8D8;
       opacity: 0.9;
       position: relative;
       width: 40%;
@@ -191,10 +190,10 @@ body {
         width: 100%; }
       body .content-cntnr .cntnr .body {
         width: 100%;
-        font-size: 2vw; }
+        font-size: 2vw;
+        padding-bottom: 5%; }
         body .content-cntnr .cntnr .body div {
-          margin-top: 5%;
-          margin-bottom: 5%; }
+          margin-top: 5%; }
   body .content-cntnr::-webkit-scrollbar {
     width: 0 !important;
     display: none; }
