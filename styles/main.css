@@ -15,7 +15,7 @@ body {
     width: 100%;
     padding-bottom: 5%;
     background-color: #000;
-    color: #FFFFFF;
+    color: #F7F6ED;
     opacity: 0.8; }
     body .nav-cntnr svg {
       position: absolute;
@@ -135,7 +135,8 @@ body {
     body .content-cntnr .cntnr {
       display: none;
       color: #000;
-      background-color: #FFFFFF;
+      background-color: #F7F6ED;
+      border: 1px solid #D2D3D9;
       position: relative;
       width: 30%;
       margin: 0 auto;
@@ -147,11 +148,11 @@ body {
       body .content-cntnr .cntnr.home {
         width: 30%; }
       body .content-cntnr .cntnr.fade-in {
-        -webkit-animation: fade-in 0.5s;
-        -moz-animation: fade-in 0.5s;
-        -ms-animation: fade-in 0.5s;
-        -o-animation: fade-in 0.5s;
-        animation: fade-in 0.5s;
+        -webkit-animation: content-fade-in 0.5s;
+        -moz-animation: content-fade-in 0.5s;
+        -ms-animation: content-fade-in 0.5s;
+        -o-animation: content-fade-in 0.5s;
+        animation: content-fade-in 0.5s;
         -webkit-animation-delay: 0.3s;
         -moz-animation-delay: 0.3s;
         -ms-animation-delay: 0.3s;
@@ -173,9 +174,11 @@ body {
         -o-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
       body .content-cntnr .cntnr.fade-out {
-        -webkit-animation: fade-out 0.5s;
-        -moz-animation: fade-out 0.5s;
-        animation: fade-out 0.5s;
+        -webkit-animation: content-fade-out 0.5s;
+        -moz-animation: content-fade-out 0.5s;
+        -ms-animation: content-fade-out 0.5s;
+        -o-animation: content-fade-out 0.5s;
+        animation: content-fade-out 0.5s;
         -webkit-animation-delay: 0.3s;
         -moz-animation-delay: 0.3s;
         -ms-animation-delay: 0.3s;
@@ -267,6 +270,66 @@ body {
     opacity: 0;
     display: none; } }
 @keyframes fade-in {
+  0% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes content-fade-out {
+  0% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@-webkit-keyframes content-fade-in {
+  0% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 0.9; } }
+@-moz-keyframes content-fade-out {
+  0% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@-moz-keyframes content-fade-in {
+  0% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 0.9; } }
+@-o-keyframes content-fade-out {
+  0% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@-o-keyframes content-fade-in {
+  0% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 0.9; } }
+@-ms-keyframes content-fade-out {
+  0% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@-ms-keyframes content-fade-in {
+  0% {
+    opacity: 0;
+    display: block; }
+  100% {
+    opacity: 0.9; } }
+@keyframes content-fade-out {
+  0% {
+    opacity: 0.9; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@keyframes content-fade-in {
   0% {
     opacity: 0;
     display: block; }
