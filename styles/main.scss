@@ -66,7 +66,7 @@ body{
 					margin-top: 3.2%;
 				}
 				&#contact{
-					left: 114%;
+					left: 115%;
 					margin-top: 3.2%;
 				}
 			}
@@ -172,7 +172,7 @@ body{
 		height: 100%;
 		overflow: auto;
 		overflow-x: hidden;
-
+        font-family: 'Raleway', sans-serif;
 		.cntnr{
 			color: #000;
 			background-color: #FFFFFF;
@@ -181,12 +181,11 @@ body{
 			position: relative;
 			width: 30%;
 			margin: 0 auto;
-			margin-top: 8%;
+			margin-top: 10%;
 			padding: 2%;
 			padding-bottom: 0;
 			display: none;
 			opacity: 0;
-			// font-family: 'Playfair Display', serif;
 			&.fade-in {
 				-webkit-animation: fade-in 0.5s;
                 -moz-animation: fade-in 0.5s;
@@ -245,14 +244,15 @@ body{
 				font-size: 3.5vw;
 				width: 100%;
 				font-weight: 300;
-				// font-family: 'Raleway', sans-serif;
+				font-family: 'Raleway', sans-serif;
 			}
 			.body{
 				position: relative;
 				margin: 0 auto;
 				width: 100%;
-				font-size: 1.7vw;
+				font-size: 1.5vw;
 				padding-bottom: 5%;
+				font-weight: 100;
 				// font-family: 'Playfair Display', serif;
 				// font-family: 'Poiret One', cursive;
 
