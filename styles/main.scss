@@ -14,7 +14,7 @@ body{
 		width: 100%;
 		padding-bottom: 5%;
 		background-color: #000;
-		opacity: 0.5;
+		opacity: 0.6;
 		svg{
 			cursor: pointer;
 			position: absolute;
@@ -82,7 +82,7 @@ body{
 				img{
 					position: absolute;
 					width: 100%;
-					opacity: 0.6;
+					opacity: 1;
 				}
 			}
 			&.about{				
@@ -91,21 +91,21 @@ body{
 					width: 100%;
 					top: 0;
 					left: 0;
-					opacity: 0.6;
+					opacity: 1;
 				}
 			}
 			&.portfolio{
                 img{
 					position: absolute;
 					width: 100%;
-					opacity: 0.6;
+					opacity: 1;
 				}
 			}
 			&.contact{
                 img{
 					position: absolute;
 					width: 105%;
-					opacity: 0.6;
+					opacity: 1;
 				}
 			}
 			&.fade-in {

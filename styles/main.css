@@ -14,7 +14,7 @@ body {
     width: 100%;
     padding-bottom: 5%;
     background-color: #000;
-    opacity: 0.5; }
+    opacity: 0.6; }
     body .nav-cntnr svg {
       cursor: pointer;
       position: absolute;
@@ -72,21 +72,21 @@ body {
       body .splash-cntnr .splash.home img {
         position: absolute;
         width: 100%;
-        opacity: 0.6; }
+        opacity: 1; }
       body .splash-cntnr .splash.about img {
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
-        opacity: 0.6; }
+        opacity: 1; }
       body .splash-cntnr .splash.portfolio img {
         position: absolute;
         width: 100%;
-        opacity: 0.6; }
+        opacity: 1; }
       body .splash-cntnr .splash.contact img {
         position: absolute;
         width: 105%;
-        opacity: 0.6; }
+        opacity: 1; }
       body .splash-cntnr .splash.fade-in {
         -webkit-animation: fade-in 0.7s;
         -moz-animation: fade-in 0.7s;
