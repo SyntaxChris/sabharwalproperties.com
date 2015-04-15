@@ -15,9 +15,9 @@ $( document ).ready(function() {
 		        break;
 		    case 'about':
 		    	$('.splash, .cntnr').hide();
-		       	$('.splash.about').removeClass('fade-out');
-		       	$('.splash.about').show();
-		        $('.splash.about').addClass('fade-in');
+		       	$('.splash.about, .cntnr.about').removeClass('fade-out');
+		       	$('.splash.about, .cntnr.about').show();
+		        $('.splash.about, .cntnr.about').addClass('fade-in');
 		        break;
 		    case 'portfolio':
 		    	$('.splash, .cntnr').hide();
@@ -33,4 +33,26 @@ $( document ).ready(function() {
 		        break;
 		}
     });
+
+	$('.member-content').children().on('click', function(e){
+		e.stopPropagation();
+	});
+
+
+
+    $('.name, .member-content').on('click', function(e){
+    	var name = $(this);
+    	
+    	if(name.hasClass('harsimran')){
+    		$('.harsimran').hide();
+    		$('.gunit').fadeIn();
+    	}else if(name.hasClass('gunit')){
+    		$('.gunit').hide();
+    		$('.pavit').fadeIn();
+    	}else if(name.hasClass('pavit')){
+    		$('.pavit').hide();
+    		$('.harsimran').fadeIn();
+    	}
+    });
+	
 });

@@ -15,7 +15,7 @@ body {
     width: 100%;
     padding-bottom: 5%;
     background-color: #000;
-    color: #F7F6ED;
+    color: #FFFCE6;
     opacity: 0.8; }
     body .nav-cntnr svg {
       position: absolute;
@@ -136,18 +136,57 @@ body {
     body .content-cntnr .cntnr {
       display: none;
       color: #000;
-      background-color: #F7F6ED;
+      background-color: #FFFCE6;
       border: 1px solid #D2D3D9;
       position: relative;
-      width: 30%;
       margin: 0 auto;
       margin-top: 10%;
       padding: 2%;
       padding-bottom: 0;
       display: none;
       opacity: 0; }
+      body .content-cntnr .cntnr .header {
+        text-align: center;
+        font-size: 3.5vw;
+        width: 100%;
+        font-weight: 300;
+        font-family: 'Cinzel', serif; }
+      body .content-cntnr .cntnr .body {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1.3vw;
+        line-height: 1.5;
+        padding-bottom: 5%;
+        font-weight: 200; }
+        body .content-cntnr .cntnr .body div {
+          margin-top: 5%; }
       body .content-cntnr .cntnr.home {
-        width: 30%; }
+        width: 50%; }
+        body .content-cntnr .cntnr.home .body {
+          font-size: 1.7vw; }
+      body .content-cntnr .cntnr.about {
+        width: 60%;
+        cursor: pointer; }
+        body .content-cntnr .cntnr.about .header {
+          font-size: 3vw; }
+          body .content-cntnr .cntnr.about .header .gunit {
+            display: none; }
+          body .content-cntnr .cntnr.about .header .pavit {
+            display: none; }
+        body .content-cntnr .cntnr.about .member-cntnr .member-content {
+          margin-top: 2%;
+          font-size: 1.5vw;
+          font-weight: 300; }
+          body .content-cntnr .cntnr.about .member-cntnr .member-content a {
+            text-decoration: none;
+            color: black; }
+            body .content-cntnr .cntnr.about .member-cntnr .member-content a:hover {
+              text-decoration: underline; }
+          body .content-cntnr .cntnr.about .member-cntnr .member-content.gunit {
+            display: none; }
+          body .content-cntnr .cntnr.about .member-cntnr .member-content.pavit {
+            display: none; }
       body .content-cntnr .cntnr.fade-in {
         -webkit-animation: content-fade-in 0.5s;
         -moz-animation: content-fade-in 0.5s;
@@ -193,23 +232,6 @@ body {
         animation-timing-function: linear;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
-      body .content-cntnr .cntnr .header {
-        text-align: center;
-        font-size: 3.5vw;
-        width: 100%;
-        font-weight: 300;
-        font-family: 'Cinzel', serif; }
-      body .content-cntnr .cntnr .body {
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        font-size: 1.3vw;
-        line-height: 1.5;
-        padding-bottom: 5%;
-        font-weight: 100;
-        font-weight: 200; }
-        body .content-cntnr .cntnr .body div {
-          margin-top: 5%; }
   body .content-cntnr::-webkit-scrollbar {
     width: 0 !important;
     display: none; }
