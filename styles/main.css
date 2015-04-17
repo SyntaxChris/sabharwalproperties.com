@@ -38,7 +38,8 @@ body {
         font-size: 1.3vw;
         cursor: pointer;
         font-family: 'Cinzel', serif;
-        font-weight: 400; }
+        font-weight: 400;
+        color: #D1BE80; }
         body .nav-cntnr .btn-cntnr .nav-btn#home {
           font-size: 3.2vw;
           left: 1%;
@@ -145,27 +146,6 @@ body {
       padding-bottom: 0;
       display: none;
       opacity: 0; }
-      body .content-cntnr .cntnr .pagnation-cntnr {
-        text-align: center;
-        width: 100%;
-        width: 15%;
-        position: relative;
-        margin: 0 auto;
-        padding-bottom: 3%; }
-        body .content-cntnr .cntnr .pagnation-cntnr .pagnation {
-          position: absolute;
-          width: 12%;
-          height: 61%;
-          border-radius: 100px;
-          border: 1px solid #162552; }
-          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.h {
-            left: 0; }
-          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.g {
-            left: 45%; }
-          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.p {
-            right: 0; }
-          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.fill {
-            background-color: #D1BE80; }
       body .content-cntnr .cntnr .header {
         text-align: center;
         font-size: 3.5vw;
@@ -183,12 +163,33 @@ body {
         body .content-cntnr .cntnr .body div {
           margin-top: 5%; }
       body .content-cntnr .cntnr.home {
-        width: 50%; }
+        width: 40%; }
         body .content-cntnr .cntnr.home .body {
           font-size: 1.7vw; }
       body .content-cntnr .cntnr.about {
         width: 60%;
         cursor: pointer; }
+        body .content-cntnr .cntnr.about .pagnation-cntnr {
+          text-align: center;
+          width: 100%;
+          width: 15%;
+          position: relative;
+          margin: 0 auto;
+          padding-bottom: 3%; }
+          body .content-cntnr .cntnr.about .pagnation-cntnr .pagnation {
+            position: absolute;
+            width: 12%;
+            height: 61%;
+            border-radius: 100px;
+            border: 1px solid #162552; }
+            body .content-cntnr .cntnr.about .pagnation-cntnr .pagnation.h {
+              left: 0; }
+            body .content-cntnr .cntnr.about .pagnation-cntnr .pagnation.g {
+              left: 45%; }
+            body .content-cntnr .cntnr.about .pagnation-cntnr .pagnation.p {
+              right: 0; }
+            body .content-cntnr .cntnr.about .pagnation-cntnr .pagnation.fill {
+              background-color: #D1BE80; }
         body .content-cntnr .cntnr.about .header {
           font-size: 3vw; }
           body .content-cntnr .cntnr.about .header .gunit {
@@ -208,6 +209,66 @@ body {
             display: none; }
           body .content-cntnr .cntnr.about .member-cntnr .member-content.pavit {
             display: none; }
+      body .content-cntnr .cntnr.portfolio {
+        width: 35%;
+        margin-right: 5%;
+        padding-bottom: 35%; }
+        body .content-cntnr .cntnr.portfolio .tab-cntnr {
+          font-family: 'Cinzel', serif; }
+          body .content-cntnr .cntnr.portfolio .tab-cntnr .tab {
+            cursor: pointer;
+            position: absolute;
+            top: 3%;
+            font-size: 1.8vw; }
+            body .content-cntnr .cntnr.portfolio .tab-cntnr .tab.retail {
+              left: 5%; }
+            body .content-cntnr .cntnr.portfolio .tab-cntnr .tab.commercial {
+              left: 27%; }
+            body .content-cntnr .cntnr.portfolio .tab-cntnr .tab.multi {
+              right: 5%; }
+            body .content-cntnr .cntnr.portfolio .tab-cntnr .tab.selected {
+              font-weight: 700; }
+        body .content-cntnr .cntnr.portfolio .body {
+          position: absolute;
+          width: 90%;
+          height: 80%;
+          top: 0;
+          padding: 0;
+          margin-top: 12%;
+          margin-bottom: 5%;
+          overflow-x: hidden;
+          overflow-y: scroll; }
+          body .content-cntnr .cntnr.portfolio .body .list table {
+            width: 100%;
+            margin-top: -5%; }
+            body .content-cntnr .cntnr.portfolio .body .list table th {
+              font-size: 2vw;
+              font-family: 'Cinzel', serif;
+              font-weight: 700; }
+            body .content-cntnr .cntnr.portfolio .body .list table td {
+              border: 1px solid rgba(0, 0, 0, 0.5);
+              text-align: center;
+              font-size: 1.6vw; }
+              body .content-cntnr .cntnr.portfolio .body .list table td.list-hov:hover {
+                cursor: pointer;
+                color: white;
+                background-color: black;
+                opacity: 0.8; }
+          body .content-cntnr .cntnr.portfolio .body .list.commercial {
+            display: none; }
+          body .content-cntnr .cntnr.portfolio .body .list.multi {
+            display: none; }
+      body .content-cntnr .cntnr.contact {
+        width: 40%;
+        text-align: center;
+        padding-bottom: 2%; }
+        body .content-cntnr .cntnr.contact .body {
+          font-size: 1.7vw; }
+          body .content-cntnr .cntnr.contact .body a {
+            text-decoration: none;
+            color: black; }
+            body .content-cntnr .cntnr.contact .body a:hover {
+              text-decoration: underline; }
       body .content-cntnr .cntnr.fade-in {
         -webkit-animation: content-fade-in 0.5s;
         -moz-animation: content-fade-in 0.5s;

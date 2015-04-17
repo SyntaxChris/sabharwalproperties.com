@@ -28,9 +28,9 @@ $( document ).ready(function() {
 		        break;
 		    case 'contact':
 		    	$('.splash, .cntnr').hide();
-		    	$('.splash.contact').removeClass('fade-out');
-		    	$('.splash.contact').show();
-		        $('.splash.contact').addClass('fade-in');
+		    	$('.splash.contact, .cntnr.contact').removeClass('fade-out');
+		    	$('.splash.contact, .cntnr.contact').show();
+		        $('.splash.contact, .cntnr.contact').addClass('fade-in');
 		        break;
 		}
     });
@@ -55,6 +55,24 @@ $( document ).ready(function() {
     		 $('.pavit').hide();
     		$('.harsimran').fadeIn();
     		$('.h').addClass('fill');
+    	}
+    });
+
+    $('.tab').on('click', function(){
+    	var tab = $(this);
+    	$('.tab').removeClass('selected');
+    	tab.addClass('selected');
+    	if(tab.hasClass('retail')){
+    		$('.list').hide();
+    		$('.list.retail').fadeIn();
+    	}
+    	else if(tab.hasClass('commercial')){
+    		$('.list').hide();
+    		$('.list.commercial').fadeIn();
+    	}
+    	else if(tab.hasClass('multi')){
+    		$('.list').hide();
+    		$('.list.multi').fadeIn();
     	}
     });
 	
