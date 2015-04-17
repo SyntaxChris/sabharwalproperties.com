@@ -38,19 +38,17 @@ $( document ).ready(function() {
 		e.stopPropagation();
 	});
 
-
-
-    $('.name, .member-content').on('click', function(e){
-    	var name = $(this);
-    	
-    	if(name.hasClass('harsimran')){
+    $('.cntnr.about').on('click', function(){
+    	if($('.name.harsimran').css('display') === 'block'){
     		$('.harsimran').hide();
     		$('.gunit').fadeIn();
-    	}else if(name.hasClass('gunit')){
+    	}
+    	else if($('.name.gunit').css('display') === 'block'){
     		$('.gunit').hide();
     		$('.pavit').fadeIn();
-    	}else if(name.hasClass('pavit')){
-    		$('.pavit').hide();
+    	}
+    	else if($('.name.pavit').css('display') === 'block'){
+    		 $('.pavit').hide();
     		$('.harsimran').fadeIn();
     	}
     });
