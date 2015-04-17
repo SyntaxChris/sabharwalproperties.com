@@ -156,6 +156,8 @@ body{
 		}
 
 	}
+
+
 	.content-cntnr{
 		position: absolute;
 		z-index: 1;
@@ -272,7 +274,7 @@ body{
 				}
 			}
 			&.portfolio{
-
+				width: 50%;
 			}
 			&.fade-in {
 				-webkit-animation: content-fade-in 0.5s;
