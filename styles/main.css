@@ -145,6 +145,27 @@ body {
       padding-bottom: 0;
       display: none;
       opacity: 0; }
+      body .content-cntnr .cntnr .pagnation-cntnr {
+        text-align: center;
+        width: 100%;
+        width: 15%;
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: 3%; }
+        body .content-cntnr .cntnr .pagnation-cntnr .pagnation {
+          position: absolute;
+          width: 12%;
+          height: 61%;
+          border-radius: 100px;
+          border: 1px solid #162552; }
+          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.h {
+            left: 0; }
+          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.g {
+            left: 45%; }
+          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.p {
+            right: 0; }
+          body .content-cntnr .cntnr .pagnation-cntnr .pagnation.fill {
+            background-color: #D1BE80; }
       body .content-cntnr .cntnr .header {
         text-align: center;
         font-size: 3.5vw;

@@ -178,6 +178,35 @@ body{
 			padding-bottom: 0;
 			display: none;
 			opacity: 0;
+			.pagnation-cntnr{
+				text-align: center;
+				width: 100%;
+				width: 15%;
+				position: relative;
+				margin: 0 auto;
+				padding-bottom: 3%;
+				.pagnation{
+					position: absolute;
+					width: 12%;
+					height: 61%;
+					border-radius: 100px;
+					border: 1px solid #162552;
+					&.h{
+						left: 0;
+					}
+					&.g{
+						left: 45%;
+					}
+					&.p{
+						right: 0;
+					}
+					&.fill{
+						background-color: #D1BE80;
+					}
+				}
+				
+				
+			}
 			.header{
 				text-align: center;
 				font-size: 3.5vw;
@@ -241,6 +270,9 @@ body{
 						}
 					}
 				}
+			}
+			&.portfolio{
+
 			}
 			&.fade-in {
 				-webkit-animation: content-fade-in 0.5s;

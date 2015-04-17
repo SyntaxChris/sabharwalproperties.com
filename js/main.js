@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 	$('.splash.home, .cntnr.home').css('display', 'block');
 	$('.splash.home, .cntnr.home').addClass('fade-in');
+	$('.h').addClass('fill');
 
     $('.nav-btn').on('click', function(){
     	var navBtn = $(this).attr('id');
@@ -21,9 +22,9 @@ $( document ).ready(function() {
 		        break;
 		    case 'portfolio':
 		    	$('.splash, .cntnr').hide();
-		    	$('.splash.portfolio').removeClass('fade-out');
-		    	$('.splash.portfolio').show();
-		        $('.splash.portfolio').addClass('fade-in');
+		    	$('.splash.portfolio, .cntnr.portfolio').removeClass('fade-out');
+		    	$('.splash.portfolio, .cntnr.portfolio').show();
+		        $('.splash.portfolio, .cntnr.portfolio').addClass('fade-in');
 		        break;
 		    case 'contact':
 		    	$('.splash, .cntnr').hide();
@@ -39,17 +40,21 @@ $( document ).ready(function() {
 	});
 
     $('.cntnr.about').on('click', function(){
+    	$('.pagnation').removeClass('fill');
     	if($('.name.harsimran').css('display') === 'block'){
     		$('.harsimran').hide();
     		$('.gunit').fadeIn();
+    		$('.g').addClass('fill');
     	}
     	else if($('.name.gunit').css('display') === 'block'){
     		$('.gunit').hide();
     		$('.pavit').fadeIn();
+    		$('.p').addClass('fill');
     	}
     	else if($('.name.pavit').css('display') === 'block'){
     		 $('.pavit').hide();
     		$('.harsimran').fadeIn();
+    		$('.h').addClass('fill');
     	}
     });
 	
