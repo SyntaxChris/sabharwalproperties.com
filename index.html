@@ -24,8 +24,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
 		<script src="js/jquery-1.11.2.js"></script>
+		<script src="js/googleMaps.js"></script>
 		<script src="js/main.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	</head>
+
 	<body>
 		<div class="nav-cntnr">
 			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="300" height="300" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"><path fill="#D1BE80" stroke="#162552" stroke-width="4" stroke-miterlimit="10" d="M143.75 263.67c0 0-35.98-15.63-57.75-46.33 -15.72-22.17-20.5-46.04-20.5-56.83 0-25.75 0-116.5 0-116.5H222c0 0 0 78.5 0 116.5 0.11 12.15-6.39 35.4-23.93 58.79C176.28 248.37 143.75 263.67 143.75 263.67z"/><path fill="#162552" stroke="#000000" stroke-miterlimit="10" d="M141.5 51.67H73.67V160.5c0 0 0.2 18.62 14 43.17 11.15 19.84 33.47 32.58 53.83 48.67V51.67z"/><text transform="matrix(1 0 0 1 145 177)" fill="#162552" font-family="'Cinzel', serif" font-size="133">P</text><text transform="matrix(1 0 0 1 74 177)" fill="#D1BE80" font-family="'Cinzel', serif" font-size="133">S</text></svg>
@@ -36,6 +39,8 @@
 				<div class="nav-btn" id="contact">CONTACT</div>
 			</div>
 		</div>
+
+
 		<div class="splash-cntnr">
 			<div class="splash home">
 				<img src="images/nyc_splash.jpg" alt="">
@@ -50,6 +55,12 @@
 				<img src="images/perryst_splash.jpg" alt="">
 			</div>
 		</div>
+
+
+
+		<div id="map_canvas"></div>
+
+
 		<div class="content-cntnr">
 			<div class="cntnr home">
 				<div class="header">
@@ -104,6 +115,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="cntnr portfolio">
 				<div class="tab-cntnr">
 					<div class="tab retail">Retail&nbsp; &#8226;</div>
@@ -113,42 +125,69 @@
 				</div>
 				<div class="body">
 					<div class="list retail">
-						Retail Test
-<!-- 						<table>
+						<table>
 							<tr>
-								<th>
-									<th>Retail</th>
-									<th>Test</th>
-								</th>
+								<th>Name</th>
+								<th>Address</th>
 							</tr>
 							<tr>
-								<td>TEST</td>
-								<td>TEST</td>
+								<td class="list-hov" data-lat="40.805486" data-long="-72.837571">Bell Plaza</td>
+								<td>1600 Montauk Highway, Mastic, NY</td>
 							</tr>
 							<tr>
-								<td>TEST</td>
-								<td>TEST</td>
+								<td class="list-hov" data-lat="40.8648472" data-long="-73.6312933">Glen Cove Mall</td>
+								<td>24 School Street, Glen Cove, NY</td>
 							</tr>
-						</table> -->
+							<tr>
+								<td class="list-hov" data-lat="40.8010763" data-long="-73.1757292">Islandia Commons</td>
+								<td>1930 Veterans Memorial Highway, Islandia, NY</td>
+							</tr>
+							<tr>
+							<td class="list-hov" data-lat="40.869507" data-long="-73.001569">The Place Furniture Galleries</td>
+								<td>2257 Route 112, Coram, NY</td>
+							</tr>
+							<tr>
+								<td class="list-hov first" data-lat="28.5534651" data-long="-81.5430808">Towne Square</td>
+								<td>11029 W. Colonial Drive, Ocoee, FL</td>
+							</tr>
+							<tr>
+								<td class="list-hov" data-lat="32.3342172" data-long="-86.2987456">Normandale Shopping Center</td>
+								<td>528 E. Patton Ave., Montgomery, AL</td>
+							</tr>
+
+							<tr>
+								<td class="list-hov" data-lat="26.1808454" data-long="-80.2523658">University Plaza</td>
+								<td>4499 N. University Drive, Lauderhill, FL</td>
+							</tr>
+						</table>
 					</div>
 					<div class="list commercial">
-						Commercial Test
-<!-- 						<table>
+						<table>
 							<tr>
-								<th>
-									<th>Commercial</th>
-									<th>Test</th>
-								</th>
+								<th>Name</th>
+								<th>Address</th>
 							</tr>
 							<tr>
-								<td>TEST</td>
-								<td>TEST</td>
+								<td class="list-hov first" data-lat="40.765092" data-long="-73.016871">Brookhaven Corporate Plaza</td>
+								<td>N Ocean Ave & LIE Service Rd N, Medford, NY</td>
 							</tr>
 							<tr>
-								<td>TEST</td>
-								<td>TEST</td>
+								<td class="list-hov" data-lat="40.8466797" data-long="-73.2571776">Commack Commons</td>
+								<td>1158 W. Jericho Tpke, Commack, NY</td>
 							</tr>
-						</table> -->
+							<tr>
+								<td class="list-hov" data-lat="40.7737539" data-long="-73.027312">Secure Self Storage</td>
+								<td>257 Waverly Ave, Patchogue, NY</td>
+							</tr>
+							<tr>
+								<td class="list-hov" data-lat="35.0799329" data-long="-78.939413">True2Form Collision Repair Center</td>
+								<td>3506 Bragg Boulevard, Fayetteville, NC</td>
+							</tr>
+							<tr>
+								<td class="list-hov" data-lat="33.781636" data-long="-84.237611">United Suites</td>
+								<td>4149 Memorial Highway, Decatur, GA</td>
+							</tr>
+						</table>
 					</div>
 					<div class="list multi">
 						<table>
@@ -157,236 +196,204 @@
 								<th>City</th>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
+								<td class="list-hov first" data-lat="40.8237139" data-long="-73.9173795">300 E. 159th St.</td>
 								<td>Bronx, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
+								<td class="list-hov" data-lat="40.816622" data-long="-73.9020852">673 Dawson St.</td>
 								<td>Bronx, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
+								<td class="list-hov" data-lat="40.830682" data-long="-73.896063">847 Freeman St.</td>
 								<td>Bronx, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
+								<td class="list-hov" data-lat="40.8263696" data-long="-73.9180264">899 Morris Ave.</td>
 								<td>Bronx, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
+								<td class="list-hov" data-lat="40.82042" data-long="-73.893571">911 Simpson St.</td>
 								<td>Bronx, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.676477" data-long="-73.874842">100 Crystal St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.685331" data-long="-73.920726">100 Howard Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.679905" data-long="-73.911407">102 Rockaway Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.695009" data-long="-73.947791">107 Vernon Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.689878" data-long="-73.915404">108 Cornelia St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.685729" data-long="-73.914392">11 Eldert St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6875411" data-long="-73.9143351">1251 Bushwock Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.679735" data-long="-73.910959">151 Hull St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.67669" data-long="-73.936706">1584 Pacific St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.676943" data-long="-73.932582">1739 Pacific St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6758138" data-long="-73.8912265">176 Van Siclen Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6892" data-long="-73.933622">178A Stuyvensant Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.679786" data-long="-73.913062">190 Macdougal St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.676467" data-long="-73.908661">2125 Atlantic Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.695122" data-long="-73.91385">252 Woodbine St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6732945" data-long="-73.8942669">264 Vermont St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6724652" data-long="-73.9007853">270 Glenmore</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.672824" data-long="-73.893813">283 Vermont St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.684001" data-long="-73.914436">37 Thomas Boyland St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6918099" data-long="-73.93889">382 Kosciuszko St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6714259" data-long="-73.891191">386 Miller Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6864248" data-long="-73.9596323">400 Classon Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.669053" data-long="-73.889667">424 Vansiclen Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.660034" data-long="-73.909908">451 Bristol St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.692178" data-long="-73.935653">462 Kosciuszko St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.669613" data-long="-73.888871">492 Hendrix St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.809267" data-long="-73.918684">507 East 140th St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.697113" data-long="-73.9306808">63 Suydam St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.692095" data-long="-73.947111">727 Dekalb Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.686965" data-long="-73.959035">75 Lexington Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.672499" data-long="-73.8814812">766 Belmont Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6728598" data-long="-73.880336">794 Belmont Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.688671" data-long="-73.924603">799 Monroe St.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.692041" data-long="-73.943401">820 Dekalb Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.692054" data-long="-73.943282">824 Dekalb Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.695834" data-long="-73.9472399">887 Myrtle Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.6870532" data-long="-73.9188159">995 Jefferson Ave.</td>
+								<td>Brooklyn, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="39.929417" data-long="-75.103223">1261 Landsdown Ave.</td>
+								<td>Camden, NJ</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="39.929417" data-long="-75.103223">1340 Chase St.</td>
+								<td>Camden, NJ</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="39.954376" data-long="-75.091476">2734 Garfield Ave.</td>
+								<td>Camden, NJ</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="39.953949" data-long="-75.074954">330 N. 37th St.</td>
+								<td>Camden, NJ</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.823554" data-long="-73.944406">350 W. 145th St.</td>
+								<td>New York, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.672045" data-long="-73.8046339">133-20 Sutter Ave.</td>
+								<td>Queens, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.7150525" data-long="-73.9132265">1860 Flushing Ave.</td>
+								<td>Queens, NY</td>
 							</tr>
 							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
-							</tr>
-							<tr>
-								<td class="list-hov">300 E. 159th St.</td>
-								<td>Bronx, NY</td>
+								<td class="list-hov" data-lat="40.7150525" data-long="-73.9132265">1864 Flushing Ave.</td>
+								<td>Queens, NY</td>
 							</tr>
 						</table>	
 					</div>
