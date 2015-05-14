@@ -5,22 +5,33 @@ $( document ).ready(function() {
 	}
 
 	function initialize(lat, long, title) {
-	    var myLatlng = new google.maps.LatLng(lat, long);
+	    var myLatLong = new google.maps.LatLng(lat, long);
 
-	    var myOptions = {
+	    var mapOptions = {
 	        zoom: 12,
-	        center: myLatlng,
-	        mapTypeId: google.maps.MapTypeId.ROADMAP
+	        center: myLatLong,
+	        mapTypeId: google.maps.MapTypeId.ROADMAP,
+	        streetViewControl: false
+	    }
+
+	   	var streetViewOptions = {
+	    	position: myLatLong,
+	    	pov: {
+	    		heading: 0,
+	    		pitch: 0
+	    	}
 	    }
 	    
-	    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	    var streetView = new google.maps.StreetViewPanorama(document.getElementById('map-street-canvas'), streetViewOptions);
+	    map.setStreetView(streetView);
 	     
 	    var infowindow = new google.maps.InfoWindow({
 	        content: "Sabharwal Properties - " + title
 	    });
 	     
 	    var marker = new google.maps.Marker({
-	        position: myLatlng,
+	        position: myLatLong,
 	        map: map,
 	        title: "300 E. 159th St."
 	    });

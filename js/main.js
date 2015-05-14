@@ -10,36 +10,48 @@ $( document ).ready(function() {
 		switch(navBtn) {
 		    case 'home':
 		    	$('.splash, .cntnr').hide();
-                $('#map_canvas').css('visibility', 'hidden');
-                $('#map_canvas').css('z-index', '0');
-                $('#map_canvas').removeClass('fade-in');
+                $('#map-canvas').css('visibility', 'hidden');
+                $('#map-street-canvas').css('visibility', 'hidden');
+                $('#map-canvas').css('z-index', '0');
+                $('#map-street-canvas').css('z-index', '0');
+                $('#map-canvas').removeClass('fade-in');
+                $('#map-street-canvas').removeClass('fade-in');
 		    	$('.splash.home, .cntnr.home').removeClass('fade-out');
 		    	$('.splash.home, .cntnr.home').show();
 		        $('.splash.home, .cntnr.home').addClass('fade-in');
 		        break;
 		    case 'about':
 		    	$('.splash, .cntnr').hide();
-                $('#map_canvas').css('visibility', 'hidden');
-                $('#map_canvas').css('z-index', '0');
-                $('#map_canvas').removeClass('fade-in');
+                $('#map-canvas').css('visibility', 'hidden');
+                $('#map-street-canvas').css('visibility', 'hidden');
+                $('#map-canvas').css('z-index', '0');
+                $('#map-street-canvas').css('z-index', '0');
+                $('#map-canvas').removeClass('fade-in');
+                $('#map-street-canvas').removeClass('fade-in');
 		       	$('.splash.about, .cntnr.about').removeClass('fade-out');
 		       	$('.splash.about, .cntnr.about').show();
 		        $('.splash.about, .cntnr.about').addClass('fade-in');
 		        break;
 		    case 'portfolio':
 		    	$('.splash, .cntnr').hide();
-                $('#map_canvas').css('visibility', 'visible');
-                $('#map_canvas').css('z-index', '30');
-                $('#map_canvas').addClass('fade-in');
+                $('#map-canvas').css('visibility', 'visible');
+                $('#map-street-canvas').css('visibility', 'visible');
+                $('#map-canvas').css('z-index', '30');
+                $('#map-street-canvas').css('z-index', '30');
+                $('#map-canvas').addClass('fade-in');
+                $('#map-street-canvas').addClass('fade-in');
 		    	$('.splash.portfolio, .cntnr.portfolio').removeClass('fade-out');
 		    	$('.splash.portfolio, .cntnr.portfolio').show();
 		        $('.splash.portfolio, .cntnr.portfolio').addClass('fade-in');
 		        break;
 		    case 'contact':
 		    	$('.splash, .cntnr').hide();
-                $('#map_canvas').css('visibility', 'hidden');
-                $('#map_canvas').css('z-index', '0');
-                $('#map_canvas').removeClass('fade-in');
+                $('#map-canvas').css('visibility', 'hidden');
+                $('#map-street-canvas').css('visibility', 'hidden');
+                $('#map-canvas').css('z-index', '0');
+                $('#map-street-canvas').css('z-index', '0');
+                $('#map-canvas').removeClass('fade-in');
+                $('#map-street-canvas').removeClass('fade-in');
 		    	$('.splash.contact, .cntnr.contact').removeClass('fade-out');
 		    	$('.splash.contact, .cntnr.contact').show();
 		        $('.splash.contact, .cntnr.contact').addClass('fade-in');
