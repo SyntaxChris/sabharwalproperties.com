@@ -46,7 +46,17 @@ $( document ).ready(function() {
 		var lat = list.data('lat');
 		var long = list.data('long');
 		var title = list.text();
+		$('.list-hov').css({
+			'background' : 'none',
+			'color'      : 'black',
+			'opacity'    : 1
+		});
 
+		list.css({
+			'background' : 'black',
+			'color'      : 'white',
+			'opacity'    : 0.8
+		});
 		initialize(lat, long, title);
 	});
 });
