@@ -49,14 +49,21 @@ body {
             left: -60px;
             width: 100px; }
         body .nav-cntnr .btn-cntnr .nav-btn#about {
-          left: 74%;
+          left: 66%;
           margin-top: 3%; }
         body .nav-cntnr .btn-cntnr .nav-btn#portfolio {
-          left: 86%;
+          left: 78%;
           margin-top: 3%; }
         body .nav-cntnr .btn-cntnr .nav-btn#contact {
-          left: 99%;
+          left: 91%;
           margin-top: 3%; }
+        body .nav-cntnr .btn-cntnr .nav-btn#investor {
+          left: 108%;
+          margin-top: 34px;
+          font-size: 12px; }
+          body .nav-cntnr .btn-cntnr .nav-btn#investor a {
+            text-decoration: none;
+            color: #D1BE80; }
   body .splash-cntnr {
     position: absolute;
     z-index: -1;
@@ -135,54 +142,63 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300; }
     body .content-cntnr .cntnr {
-      display: none;
       color: #000;
       background-color: #FFFEF5;
       border: 1px solid #D2D3D9;
       position: relative;
       margin: 0 auto;
-      margin-top: 10%;
+      margin-top: 8%;
       padding: 3%;
       padding-bottom: 0;
       padding-top: 2%;
       display: none;
-      opacity: 0; }
+      opacity: 0.8;
+      height: 560px; }
       body .content-cntnr .cntnr .header {
         text-align: center;
-        font-size: 35px;
+        font-size: 40px;
         width: 100%;
-        font-weight: 300;
+        font-weight: 400;
+        margin-bottom: 35px;
         font-family: 'Lato', sans-serif; }
       body .content-cntnr .cntnr .body {
         position: relative;
         margin: 0 auto;
         width: 100%;
-        line-height: 2;
+        line-height: 1.5;
         padding-bottom: 5%; }
-        body .content-cntnr .cntnr .body div {
-          font-size: 16px;
-          margin-top: 5%;
-          font-weight: 300; }
+        body .content-cntnr .cntnr .body p {
+          font-size: 24px; }
         body .content-cntnr .cntnr .body h2 {
-          font-weight: 300;
+          font-size: 30px;
+          font-weight: 400;
           text-align: center; }
       body .content-cntnr .cntnr.home {
-        width: 400px; }
+        display: none;
+        opacity: 0;
+        width: 600px;
+        padding: 35px 80px 0px 80px;
+        border: 1px solid black; }
         body .content-cntnr .cntnr.home .body {
+          margin-top: 30px;
           padding-bottom: 10%; }
       body .content-cntnr .cntnr.about {
-        width: 400px;
-        height: 500px; }
+        display: none;
+        opacity: 0;
+        width: 550px;
+        padding: 35px 80px 0px 80px;
+        border: 1px solid black; }
         body .content-cntnr .cntnr.about .body {
-          width: 100%;
-          height: 400px;
-          margin-left: -10%;
-          padding-left: 10%;
-          padding-right: 10%;
-          margin-top: -5%;
+          width: 530px;
+          height: 450px;
+          padding-right: 20px;
+          margin-left: 0px;
+          margin-top: -35px;
           overflow: hidden;
           overflow-y: scroll; }
       body .content-cntnr .cntnr.portfolio {
+        display: none;
+        opacity: 0;
         width: 450px;
         height: 480px; }
         body .content-cntnr .cntnr.portfolio h2 {
@@ -237,6 +253,8 @@ body {
           body .content-cntnr .cntnr.portfolio .body .list.residential {
             display: none; }
       body .content-cntnr .cntnr.contact {
+        display: none;
+        opacity: 0;
         width: 400px;
         height: 500px;
         text-align: center;
@@ -368,7 +386,7 @@ body {
     opacity: 1; } }
 @-webkit-keyframes content-fade-out {
   0% {
-    opacity: 0.9; }
+    opacity: 1; }
   100% {
     opacity: 0;
     display: none; } }
@@ -377,10 +395,10 @@ body {
     opacity: 0;
     display: block; }
   100% {
-    opacity: 0.9; } }
+    opacity: 1; } }
 @-moz-keyframes content-fade-out {
   0% {
-    opacity: 0.9; }
+    opacity: 1; }
   100% {
     opacity: 0;
     display: none; } }
@@ -389,10 +407,10 @@ body {
     opacity: 0;
     display: block; }
   100% {
-    opacity: 0.9; } }
+    opacity: 1; } }
 @-o-keyframes content-fade-out {
   0% {
-    opacity: 0.9; }
+    opacity: 1; }
   100% {
     opacity: 0;
     display: none; } }
@@ -401,10 +419,10 @@ body {
     opacity: 0;
     display: block; }
   100% {
-    opacity: 0.9; } }
+    opacity: 1; } }
 @-ms-keyframes content-fade-out {
   0% {
-    opacity: 0.9; }
+    opacity: 1; }
   100% {
     opacity: 0;
     display: none; } }
@@ -413,10 +431,10 @@ body {
     opacity: 0;
     display: block; }
   100% {
-    opacity: 0.9; } }
+    opacity: 1; } }
 @keyframes content-fade-out {
   0% {
-    opacity: 0.9; }
+    opacity: 1; }
   100% {
     opacity: 0;
     display: none; } }
